@@ -1,0 +1,5 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res/android">
+
+    <string name="base_photo_path">http://image.tmdb.org/t/p/w185</string>
+
+</resources>

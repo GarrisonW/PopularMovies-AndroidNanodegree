@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_movie_detail_title"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:background="#00a9b2"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+            android:layout_height="60dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/imageview_movie_detail_poster"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textview_movie_detail_year"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textview_movie_detail_length"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textview_movie_detail_rating"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/button_movie_detail_favorite"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/button_mark_as_favorite"
+                    android:textAppearance="@android:style/TextAppearance.Holo.Small"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textview_movie_detail_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"/>
+
+        <ImageView
+            android:id="@+id/divider_one"
+            android:layout_width="match_parent"
+            android:background="#00a9b2"
+            android:layout_marginTop="15dp"
+            android:layout_height="2dp" />
+
+        <TextView
+            android:id="@+id/textview_header_trailers"
+            android:text="@string/header_trailers"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="25dp"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"/>
+
+        <fragment android:name="com.garrison.popularmovies.TrailersListFragment"
+            android:id="@+id/trailers_list"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+        <ImageView
+            android:id="@+id/divider_two"
+            android:layout_width="match_parent"
+            android:background="#00a9b2"
+            android:layout_marginTop="15dp"
+            android:layout_height="2dp" />
+
+        <TextView
+            android:id="@+id/textview_header_reviews"
+            android:text="@string/header_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+        <fragment android:name="com.garrison.popularmovies.ReviewsListFragment"
+            android:id="@+id/review_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
